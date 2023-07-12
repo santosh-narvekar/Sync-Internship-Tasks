@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <title>Product Landing Page</title>
+  </head>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat&display=swap" rel="stylesheet">
+
+  <body id="body">
+    <header class="header " id="header">
+      <a href="#">
+        <img class="logo" alt="Pance" src="img/logo1.png"/>
+
+      </a>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+           <li><a href="#section-how" class="main-nav-link">ABOUT US</a></li>
+          <li><a href="#section-how" class="main-nav-link">FEATURES</a></li>
+          <li><a href="#cards"  id='buy-it-now'class="main-nav-link">BUY IT NOW!</a></li>
+          <li><a href="#" class="main-nav-link nav-cta">Sign in</a></li>
+        </ul>
+      </nav>
+
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"> </ion-icon>
+        <ion-icon class='icon-mobile-nav'name="close-outline"> </ion-icon>
+
+      </button>
+    </header>
+
+    <main>
+      <section class="section section-hero
+       background" id="section-hero" >
+        <div class="hero">
+          <div class="hero-text-box">
+            <h1 class="heading-primary">
+              One Tru Bass
+            </h1>
+
+            <p class="hero-description">
+              Enrich Your Noise Experience Today with our latest 
+              headset!<br />
+              The Best in The Market
+              
+            <br>
+            <br><strong>Select The One You Love
+            </strong>
+            </p>
+            
+            
+       
+     <a href="#cards">
+         <div class="img-box">
+            <img src="img/noise-headphones-1.webp" class="select-img"
+         id="select-img_0"
+     
+          </a>
+          <img src="img/noise-headphones-2.webp"
+          class="select-img " id="select-img_1"
+            data-="2">
+          <img src="img/noise-headphones-3.webp"
+          class="select-img" id="select-img_2"
+            data-="3">
+          <img src="img/noise-headphones-4.webp"
+          class="select-img" id="select-img_2"
+            data-="4">
+        </div>
+        </a>
+
+          </div>
+
+
+          <div class="hero-img-box" id="hero-img-box">
+            <img
+              src="img/noise-headphones-4.webp"
+              class="hero-img"
+              id="hero-img"
+              alt="headset"
+            />
+          </div>
+              </section>
+
+      <!--Developing a Z-Pattern-->
+
+      <section class="section section-how " id="section-how" style="background-color: #fff important!;">
+        <div class="container">
+      
+            <h2 class="heading-secondary margin-left-lg"> A HEADSET YOU SHOULD BUY
+          </h2>
+        </div>
+
+        <div class="container grid grid--2--cols">
+          <div class="step-text-box">
+            <h3 class="heading-text">
+              One Charge!Gets you 16 Hours of Insane PlayTime!😨
+            </h3>
+
+            <p class="step-description">
+             It’s always music time with Noise One. Listen to your
+favourite tunes continuously for 16 hours; and when
+the headphones run out of juice, just plug in the
+auxiliary wire to start where you left off.
+            </p>
+          </div>
+
+          <div class="step-img-box">
+            <img
+              src="img/detailed-noise-1.webp"
+              class="step-img"
+              alt="boy playing games using the gaming headsets"
+            />
+          </div>
+
+          <div class="step-img-box ">
+            <img
+              src="img/detailed-noise-2.webp"
+              class="step-img"
+              alt="boy playing games using the gaming headsets"
+            />
+          </div>
+
+          <div class="step-text-box ">
+
+            <h3 class="heading-text">
+              Comfort! you wont even feel the Pressure
+            </h3>
+
+            <p class="step-description">
+Noise One is light on weight with soft pads on the
+band and cups that ensure lasting comfort even after
+hours of use. While the design safeguards against
+distraction, the 90-degree rotatable cups make them
+travel friendly.
+            </p>
+          </div>
+
+          <div class="step-text-box">
+            
+            <h3 class="heading-text">
+              Sound Quality! Feel like you are living in the Music
+            </h3>
+
+            <p class="step-description">
+             
+              Noise One features Tru BassTM technology that
+delivers punchy bass and an over-the-ear design with
+40mm speaker driver that offers passive noise
+isolation so you can focus on pure music.
+            </p>
+          </div>
+
+          <div class="step-img-box">
+            <img
+              src="img/detailed-noise.webp"
+              class="step-img"
+              alt="boy playing games using the gaming headsets"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-testimonials margin-bottom-lg">
+
+        <div class="container">
+          <h2 class="heading-secondary margin-left-lg">
+          
+        </div>
+
+
+      <section class="section pricing grid">
+        
+        <h2 class="heading-secondary
+   margin-bottom-sm margin-left-lg">
+   IN ONE HEADSET, YOU GET ALL OF THIS           
+</h2>
+        <div class="container">
+          <div class="grid grid--2--cols margin-top-lg">
+            <div class="features-card margin-left-lg">
+              <ul class="features" id="features">
+                <li id="sound" class="features1">Amazing Sound Quality</li>
+
+                <li id="waterProof"
+                class="features1">Stylish Design</li>
+                <li id="backup"
+                class="features1">Comfortable Wear</li>
+                <li id="PlayTime"
+                class="features1">Awesome Controls</li>
+                <li id="wear"
+                class="features1">16hr PlayTime</li>
+                <li id="different"
+                >and many more!</li>
+              </ul>
+              <ul></ul>
+
+            </div>
+          
+            <div class="box">
+                
+        
+              <img src="img/detailed-noise-1.webp" id="grid-img" />
+              
+              <p class="hero-description" id="hero-description">
+              </p>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+
+      
+
+      
+<section class="section container1" id="section--3 ">
+      <div>
+      <center>
+         <h1 class="heading-tertiary margin-top-lg">
+          Trusted By Millions of People WorldWide
+        </h1>
+      </center> 
+      </div>
+
+      <div class="slider">
+        <div class="slide">
+          <div class="testimonial">
+            <h5 class="testimonial__header">&#9733;&#9733;&#9733;&#9733;&star;</h5>
+            <blockquote class="testimonial__text">
+Just Amazing Amazing Headphones for Music!Must try Today itself
+              
+            </blockquote>
+            <address class="testimonial__author">
+              <img src="img/user-1.jpg" alt="" class="testimonial__photo" />
+              <h6 class="testimonial__name">Aarav Lynn</h6>
+              <p class="testimonial__location">San Francisco, USA</p>
+            </address>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="testimonial">
+            <h5 class="testimonial__header">
+              &#9733;&#9733;&#9733;&#9733;&#9733;
+            </h5>
+            <blockquote class="testimonial__text">
+              i wasn't so sure about this product but it turned out to be
+                greater than what was expected
+            </blockquote>
+            <address class="testimonial__author">
+              <img src="img/user-2.jpg" alt="" class="testimonial__photo" />
+              <h6 class="testimonial__name">Miyah Miles</h6>
+              <p class="testimonial__location">London, UK</p>
+            </address>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="testimonial">
+            <h5 class="testimonial__header">
+              &#9733&#9733&#9733&#9733&star;
+            </h5>
+            <blockquote class="testimonial__text">
+    
+                It is amazing product,delivers what it promises to be ,i will
+                buy products only from this company now on!
+            </blockquote>
+            <address class="testimonial__author">
+              <img src="img/user-3.jpg" alt="" class="testimonial__photo" />
+              <h6 class="testimonial__name">Francisco Gomes</h6>
+              <p class="testimonial__location">Lisbon, Portugal</p>
+            </address>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    
+    <section class="section  grid container" id="cards" style="margin-left: 0rem;">
+    <center>
+      <h3 class="heading-tertiary margintopsmallest margin0" style="margin-bottom: 3rem;" >
+      SO WHAT ARE YOU WAITING FOR ?  
+    </h3>
+    </center>
+
+      <div class="section-buy grid grid--4--cols">
+        <div class="buy-card buy-card-1">
+          <div class="stock-btn-1">
+            SOLD OUT
+          </div>
+          <img src="img/noise-headphones-1.webp" class="card-img" id="card-img1"/>
+          <p class="card-color">Soft Black
+          </p>
+              <h3 class="price">$10/- USD ONLY</h3>
+        
+        <button class="buy-now">LETS GET IT!</button>
+        </div>
+        <div class="buy-card buy-card-2">
+               <div class="stock-btn-1">
+            IN STOCK
+          </div>  
+
+          <img src="img/noise-headphones-2.webp"
+          class="card-img" id="card-img2"/>
+          <p class="card-color">
+Warm Beige</p>
+
+      <h3 class="price">$10/- USD ONLY</h3>
+        
+        <button class="buy-now ">LETS GET IT!</button>
+        </div>
+        <div class="buy-card buy-card-3">
+           <div class="stock-btn-1">
+            BEST VALUE
+          </div>
+          <img src="img/noise-headphones-3.webp"
+          class="card-img" id="card-img3"/>
+           
+          <p class="card-color">Calm Blue</p>
+                <h3 class="price">$10/- USD ONLY</h3>
+        
+        <button class="buy-now">LETS GET IT!</button>
+        
+        </div>
+        <div class="buy-card buy-card-4">
+       <div class="stock-btn-1">
+            1 ITEM LEFT
+          </div>
+          <img src="img/noise-headphones-4.webp"
+          class="card-img" id="card-img4"/>
+          
+          <p class="card-color">
+Serene White</p>
+      <h3 class="price">$10/- USD ONLY</h3>
+        
+        <button class="buy-now">LETS GET IT!</button>
+        </div>
+        
+      </div>
+
+  
+    </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container grid grid-footer">
+        <div class="logo-col">
+        <a href="#" class="footer-logo">
+        <img class="logo" alt="noise logo" src="img/logo1.png" />
+       </a>
+       
+       <ul class="social-links">
+        <li><a href="#" class="footer-link"><ion-icon name="logo-instagram" class="social-icon" ></ion-icon></a></li>
+        <li><a href="#" class="footer-link"><ion-icon name="logo-facebook" class="social-icon" > </ion-icon></a></li><li><a href="#" class="footer-link"><ion-icon name="logo-twitter" class="social-icon"></ion-icon></a></li>
+       </ul>
+       <p class="copy-right">Copyright &copy; 2023 by Noise,Inc.<br> All rights reserved</p> 
+
+        </div>
+
+
+
+        <div class="address-col">
+          <p class="footer-heading">
+            Contact us
+          </p>
+          <address class="contacts">      
+          <p class="address">
+            China Bejing St. 2 Floor,Bejing,
+            <br>CA 94107
+          </p>
+          <p>
+          <a class='footer-link'href="tel:           415-201-6370">415-201-6370
+          </a>
+          <br>
+          <a class="footer-link" href="mailto:hello@noise.com">
+        hello@noise.com</a>     
+          </p>
+          </address>
+        </div>
+        <nav class="nav-col">
+          <p class="footer-heading">Account</p>
+          <ul class="footer-nav">
+            <li><a href="#" class="footer-link">Create account</a></li>
+            <li><a href="#" class="footer-link">Sign in</a></li>
+            <li><a href="#" class="footer-link">iOS app</a></li>
+            <li><a href="#" class="footer-link">Android app</a></li>
+          </ul>
+        </nav>
+
+
+        <nav class="nav-col">
+          <p class="footer-heading">Company</p>
+          <ul class="footer-nav">
+            <li><a href="#" class="footer-link">About Noise</a></li>
+            <li><a href="#" class="footer-link">For Business</a></li>
+            <li><a href="#" class="footer-link">Our partners</a></li>
+            <li><a href="#" class="footer-link">Careers</a></li>
+          </ul>
+        </nav>
+
+      
+        <nav class="nav-col">
+          <p class="footer-heading">Resources</p>
+          <ul class="footer-nav">
+            <li><a href="#" class="footer-link">How to Use?</a></li>
+            <li><a href="#" class="footer-link">Help center</a></li>
+            <li><a href="#" class="footer-link">Privacy & terms</a></li>
+          </ul>
+        </nav>
+
+      </div>
+
+
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
