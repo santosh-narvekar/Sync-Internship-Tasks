@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <title>Music Player</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="music-box">
+      <h1>iMUSIC PLAYER</h1>
+      <p>Your one stop destination for music!</p>
+
+      <div class="flex">
+
+        <play class="play-Status " id="playStatus">Lets Start</play>
+        <img src="images/mainPlayer.jpg"  id='img'class="img" />
+        <span class="title " id="songName">
+          MUSIC LOVERS
+        </span>
+        <span class="artist" id="songArtist">
+          GET READY!
+        </span>
+        </div>
+      
+      <div class="play-controls">
+        <ion-icon class='backward-btn unclickable' id='backward-btn' name="play-back-outline"></ion-icon>
+
+        <ion-icon  class='play-previous unclickable'  
+        name="play-skip-back-outline" id="play-previous"></ion-icon>
+
+        <ion-icon name="play-outline" id="play" class="play"></ion-icon>
+        
+        <ion-icon
+          name="pause-outline"
+          id="pause"
+          class="pause hidden"
+        ></ion-icon>
+      
+        <ion-icon class="play-next unclickable"  
+      id="play-next"name="play-skip-forward-outline" id="forwad"></ion-icon></ion-icon>
+      
+ <ion-icon id="forward-btn" class="forward-btn unclickable" name="play-forward-outline"></ion-icon>;
+
+        </div>
+        <div class="mybar" id="mybar">
+          <div class="bar hidden" id="bar">  
+        </div>  
+        </div>
+        
+      </div>
+    </div>
+    <script src="script.js" />
+  </body>
+</html>
