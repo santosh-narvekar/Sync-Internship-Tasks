@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>It's Quiz Time</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="highscore hidden">
+      Current High Score:
+      <span id="highScore" class="hidden">0</span>
+    </div>
+
+    <div class="modal-home" id="modal-home">
+      <h3 class="heading-primary">THE ULTIMATE QUIZ GAME</h3>
+      <p class="question-primary">Get Your Programming Knowledge tested</p>
+      <div class="flex">
+        <button class="programming-quiz-btn" id="programming-quiz-btn">
+          PROGRAMMING QUIZ
+        </button>
+      </div>
+    </div>
+
+    <div class="modal-instructions hidden" id="modal-instructions">
+      <p>INSTRUCTIONS FOR THE QUIZ</p>
+      <li>
+        10 options will appear on your screen,you have a time of just 5 seconds
+        per question
+      </li>
+      <li>Each question carries 1 mark</li>
+      <li>Only one selection is allowed</li>
+      <li>If you feel,you haven't scored good ,you can restart the quiz</li>
+
+      <button id="agree">ACCEPT</button>
+      <button id="reject">REJECT</button>
+    </div>
+
+    <div class="modal hidden">
+      <div class="final-score" id="final-score">
+        Your Score: <span class="" id="score">0</span>
+      </div>
+
+      <div class="text-msg" id="text-msg"></div>
+
+      <h3 class="attempted-text">
+        No of Attempted questions: <span class="attempt" id="attempt"></span>
+      </h3>
+
+      <h3 class="corrected-text">
+        No of Questions right: <span class="correct" id="correct"> </span>
+      </h3>
+
+      <h3 class="rejected-text">
+        No of Questions wrong: <span class="wrong" id="wrong"> </span>
+      </h3>
+
+      <h3 class="unattempted-text">
+        No of Questions unattempted:
+        <span class="unattempted" id="unattempted"> </span>
+      </h3>
+
+      <button id="restart-btn">PLAY AGAIN?</button>
+      <button id="modal-btn" class="modal-btn">GO TO HOME</button>
+    </div>
+
+    <div class="timer hidden" id="timer">5</div>
+
+    <center>
+      <div class="quiz-box">
+        <button class="btn hidden" id="start-btn">LETS START</button>
+        <p class="questions" id="question"></p>
+
+        <div id="chooseoptions" class="chooseoptions hidden">
+          <ul class="all-options" id="all-options">
+            <li class="options" id="opt1"></li>
+            <li class="options" id="opt2"></li>
+            <li class="options" id="opt3"></li>
+            <li class="options" id="opt4"></li>
+            <li class="options" id="opt5"></li>
+            <li class="options" id="opt6"></li>
+          </ul>
+        </div>
+      </div>
+    </center>
+
+    <!-- <button id="restart-btn" class="restart-btn">RESTART</button> -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
