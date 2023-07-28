@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=
+  , initial-scale=1.0"
+    />
+    <title>Document</title>
+    <link rel="stylesheet" href="./admin.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+      </head>
+  <body>
+    <modal class="courseAddModal">
+
+    </modal>
+    <div class="container">
+      <aside>
+        <div class="top">
+          <div class="logo">
+            <img src="images/logo.jpg" />
+            <h2>i <span class="green">SCHOOL</span></h2>
+          </div>
+          <div class="close" id="close-btn">
+            <ion-icon name="close-outline"></ion-icon>
+          </div>
+        </div>
+
+        <div class="sidebar">
+          <a href="#">
+            <h3>DASHBOARD</h3>
+          </a>
+          <a href="#" class="active">
+            <h3>STUDENTS</h3>
+          </a>
+          <a href="#">
+            <h3>ORDERS</h3>
+          </a>
+
+          <a href="#">
+            <h3 id="addingcourses">+ADD COURSES</h3>
+          </a>
+          <a href="#">
+            <h3>+ADD EXAMS</h3>
+          </a>
+
+          <a href="#">
+            <h3>LOGOUT</h3>
+          </a>
+        </div>
+      </aside>
+      <main class="dashboard">
+
+      </main>
+        <div class="profile">
+           Welcome Back,
+          <h3 id="adminUserName"></h3>
+        </div>
+      </main>
+    </div>
+<script>
+  let courseName = document.getElementById('courseName');
+  let courseTeacher = document.getElementById('courseTeacher');
+  let courseImg = document.getElementById('myfile')
+  let courseDesc=document.getElementById('courseDesc')
+  let submit = document.getElementById('submit');
+    document.getElementById('adminUserName').textContent = localStorage.getItem("admin").split("\"")[3];
+  </script>
+</body>
+</html>

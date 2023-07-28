@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </head>
+  <body>
+    <div class="register-form hidden " id="register">
+      <form class="form" action="#">
+        <button id="close-register">X</button>  
+        <label>Enter Your Name:</label>
+        <input id="inp-name"  autocomplete="off">
+        <label>Enter Your Password:</label>
+        <input id="inp-password"  autocomplete="off">
+        <button id="btn-register">REGISTER!</button>
+      </form>
+    </div>
+
+    <div class="login-form hidden" id="login">
+      <form class="form" action="#">
+        <button id="close-login">X</button>  
+        <label>Enter Your Name:</label>
+        <input id="inp-login-name" autocomplete="off">
+        <label>Enter Your Password:</label>
+        <input id="inp-login-password"  autocomplete="off">
+        <button id="btn-login">LOGIN!</button>
+      </form>
+    </div>
+    <video autoplay muted loop id="myVideo">
+        <source src="typing.mp4" type="video/mp4" />
+      </video>
+
+    <nav class="navFlex">
+      <ul>
+        <li>ABOUT US</li>
+        <a href="#courses"><li>COURSES WE PROVIDE</li></a>
+        <a href="#test"><li>TAKE AN ONLINE TEST</li></a>
+        <a href="#why"><li> WHY iSCHOOL</li></a>
+        <li class="userWelcome hidden" id="userWelcome">  
+          Welcome, <span id="userName"></span>
+        </li>
+        <a href="" id="admin"><li>ADMIN LOGIN</li></a>
+
+      </ul>
+    </nav>
+
+        
+      <section class="hero">           
+      <div class="about-company">
+        <h1>WELCOME TO iSCHOOL</h1>
+
+
+
+
+        
+    <center>
+      <span class="login-msg hidden" id="login-msg">
+        </span>     
+    </center>
+      </div>
+      <button class="btn-sign-in" id="btn-log-in">Log In</button>
+      <button class="btn-sign-out hidden" id="btn-log-out">Log Out</button>
+      
+      <div class="register" id="msg">
+          First Time Login?
+          <a href="#register" id="register-link">
+            Register Now
+          </a>
+      </div>
+    </section>
+    </div>
+    <h1 class="secondary-heading">WHO WE ARE</h1>
+    
+    <section class="about-us">
+    <div>
+      <ul id="list-item">
+      <li>We Educate You</li>
+      <li>We Teach You to Think</li>
+      <li>We Take Your Skills To The Next Level</li>
+      <li>We are iSchool</li>
+    </ul>
+   </div>
+
+    <div class="img-box" id="img-box">
+      <img src="images/weTeach1.jpg" class="img" id="img"/>
+    </div>
+    </section>
+
+    <h1 class="MarginLeft secondary-heading">MEET OUR LEADERS</h1>
+<section class="mainMembers">
+
+    <div class=" grid--3--cols">
+      <div class="img11">
+        <img src="images/face1.avif" class="team-image"/>
+        <h1 class="founder-position-text">CO-FOUNDER</h1>
+        </div>
+       <div class="img2">
+        <img src="images/face2.avif"  class="team-image"/>
+        <h1 class="founder-position-text">FOUNDER</h1>
+      </div>
+       <div class="img3">
+        <img src="images/face3.avif"  class="team-image"/>
+        
+        <h1 class="founder-position-text">CEO</h1>
+      </div>
+    </div>
+  </section>
+
+    <center>
+      <h1 class="secondary-heading Margin-Left" >WHY ISchool</h1>
+    </center>
+
+    <section class="WHY-US  
+    " id="why">
+    <div>
+      <ul>
+<center>
+  <span><ion-icon name="star-outline" class="star"></ion-icon></span>
+  <li class="text" id="text">Budget Friendly Courses</li>
+</center> 
+      </ul>
+      <div class="img-slider">
+          <img src="images/highQuality1.webp" class="img-slider-images " id="img1"/>
+        
+        <img class="img-slider-images"src="images/highQuality2.webp" id="img2"/>
+        
+        <img class="img-slider-images " id="img3"src="images/highQuality3.webp"/>
+        
+        <img class="img-slider-images" id="img4" src="images/highQuality4.webp"/>
+        
+        <img class="img-slider-images" id="img5"src="images/highQuality5.webp"/>
+        
+        <img class="img-slider-images" id="img6"src="images/highQuality6.webp"/>
+      </div>
+    </div>
+    </section>
+
+     <h3 class="primary-heading">OUR ALL IN ONE PROGRAMMING COURSES</h3>
+
+    <section class="courses-list" id="courses">
+      <div class="card" id="card card1">
+        <img src="images/programming1.png" class="img1"/>
+        <center>
+          <h3>THE COMPLETE C LANGUAGE COURSE</h3>
+        </center>
+        <p class="taught">Taught By:<span>Franciso Gomes</span></p>
+
+        <p class="course-desc">
+          The Complete C Course Taught by One of our best instructors Franciso
+          Gomes takes you from zero to hero in C Language!
+        </p>
+        <center>
+          <button class="btn-course">BUY NOW</button>
+        </center>
+      </div>
+
+         <div class="card" id="card card2">
+        <img src="images/programming2.png" class="img1"/>
+        <center>
+          <h3>THE COMPLETE PYTHON LANGUAGE COURSE</h3>
+        </center>
+        <p class="taught">Taught By:<span>Franciso Gomes</span></p>
+
+        <p class="course-desc">
+          The Complete C Course Taught by One of our best instructors Franciso
+          Gomes takes you from zero to hero in C Language!
+        </p>
+        <center>
+          <button class="btn-course">BUY NOW</button>
+        </center>
+      </div>
+         <div class="card" id="card card3">
+        <img src="images/programming3.png" class="img1"/>
+        <center>
+          <h3>THE COMPLETE JAVASCIPT LANGUAGE COURSE</h3>
+        </center>
+        <p class="taught">Taught By:<span>Franciso Gomes</span></p>
+        <p class="course-desc">
+          The Complete C Course Taught by One of our best instructors Franciso
+          Gomes takes you from zero to hero in C Language!
+        </p>
+        <center>
+          <button class="btn-course">BUY NOW</button>
+        </center>
+      </div>
+      
+      <div class="card" id="card card4">
+        <img src="images/programming4.png" class="img1"/>
+        <center>
+          <h3>THE COMPLETE JAVA LANGUAGE COURSE</h3>
+        </center>
+        <p class="taught">Taught By:<span>Franciso Gomes</span></p>
+
+        <p class="course-desc">
+          The Complete C Course Taugh
+          t by One of our best instructors Franciso
+          Gomes takes you from zero to hero in C Language!
+        </p>
+        <center>
+          <button class="btn-course">BUY NOW</button>
+        </center>
+      </div>
+    </section>
+
+    <h3 class="primary-heading">FREE TESTS TO EVAULTE YOUR KNOWLEDGE</h3>
+    <section class="courses-list courses-list-1" id="test">
+      <div class="card">
+        <div>
+          <h3>C LANGUAGE EXAM</h3>
+          <img src="images/programming1.png" class="img" />
+        </div>
+
+        <div>
+          <p class="course-desc">
+            You Have Now Seen How the C Language Works ,Now take a Online Test
+            and Evaulate Yourselves
+            <button id="btn-start-quiz-1">START NOW</button>
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div>
+          <h3>PYTHON EXAM</h3>
+          <img src="images/programming2.png" class="img" />
+        </div>
+
+        <div>
+          <p class="course-desc">
+            Python is a very awesome language and it is needed today for every
+            other purpose,so you can take this test and evaluate yourselves!
+          </p>
+          <button id="btn-start-quiz-2">START NOW</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div>
+          <h3>JAVASCRIPT EXAM</h3>
+          <img src="images/programming3.png" class="img" />
+        </div>
+
+        <div>
+          <p class="course-desc">
+            You Have Seen The Internal Implementations of JavaScript And In
+            Building Web Apps,Now You Can Give a Test to Evaulate Yourselves!
+          </p>
+          <button id="btn-start-quiz-3">START NOW</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div>
+          <h3>JAVA EXAM</h3>
+          <img src="images/programming4.png" class="img" />
+        </div>
+
+        <div>
+          <p class="course-desc">
+            You Have Seen The Internal Implementations of Java,Now You Can Give
+            a Test to Evaulate Yourselves!
+          </p>
+          <button id="btn-start-quiz-4">START NOW</button>
+        </div>
+      </div>
+    </section>
+
+
+    <center>
+      <h3 class="primary-heading">STUDENTS TESTIMONIALS</h3>
+    </center>
+
+    <section class="student-testimonials">
+      <div class="testimonial-box">
+        <img src="images/student1.avif" />
+        <p>
+          It Was a Fantastic opportunity For Me to learn Programming From
+          iSchool,they teach in a very practical way and clear every doubt
+          regarding the topic
+        </p>
+        <p>-Anthony Gonazaves</p>
+      </div>
+      <div class="testimonial-box center">
+        <img src="images/student2.avif" />
+        <p>
+          Apart From Teaching What i like the most about their courses is the
+          way they are structured such that everyone can follow its own pace
+          without hesitation.
+        </p>
+        <p>-Sam Lio</p>
+      </div>
+      <div class="testimonial-box">
+        <img src="images/student3.avif" />
+        <p>
+          Anyone who is in doubt whether to buy their courses or not ,i would
+          say just go for it they are clearly one of the best courses out there
+          for a cheap price
+        </p>
+        <p>-Lane Del</p>
+      </div>
+    </section>
+  
+    <script src="script.js"></script>
+  </body>
+</html>
